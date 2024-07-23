@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Restoration Services | Renoma Historic Building Experts
     </title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="/renoma-mockup/styles.css">
 </head>
 
 <body>
     <header id="navbar-container"></header>
     <main>
         <section class="wireframe">
-            <img src="../images/interior-restoration.png" alt="Wireframe Design">
+            <img src="/renoma-mockup/images/interior-restoration.png" alt="Wireframe Design">
         </section>
     </main>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            fetch('../navbar.html')
+            fetch('/renoma-mockup/navbar.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('navbar-container').innerHTML = data;
