@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff; /* Set the background color to white */
+  border-bottom: 1px solid #ddd;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+header.scrolled {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Set background to semi-transparent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1440px; /* Set the maximum width */
+  margin: 0 auto; /* Center the navbar */
+  width: 100%; /* Ensure it takes full width up to the max-width */
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.dropdown-content li {
+  margin: 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.language-selector {
+  font-size: 16px;
+}
+
+.language-selector a {
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.wireframe img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
