@@ -116,3 +116,13 @@ main {
   display: block;
   margin: 0 auto;
 }
+.logo img {
+  max-width: 70%;
+  border: 1px;
+  border-style: solid;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
