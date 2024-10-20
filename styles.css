@@ -6,11 +6,11 @@ body {
 
 header {
   background-color: #ffffff; /* Set the background color to white */
-  border-bottom: 1px solid #ddd;
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensure it stays on top of other elements */
+  /* border-bottom: 1px solid #ddd; */
+  /* Removed sticky positioning */
+  /* position: -webkit-sticky; For Safari */
+  /* position: sticky; */
+  /* Removed top and z-index */
 }
 
 header.scrolled {
@@ -26,18 +26,15 @@ header.scrolled {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  max-width: 1440px; /* Set the maximum width */
+  align-items: flex-end; /* Align the logo and links to the bottom */
+  padding: 10px 60px;
+  max-width: 1680px; /* Set the maximum width */
   margin: 0 auto; /* Center the navbar */
   width: 100%; /* Ensure it takes full width up to the max-width */
 }
 
-.logo a {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
+.logo img {
+  height: 95px;
 }
 
 .nav-links {
@@ -48,46 +45,22 @@ header.scrolled {
 }
 
 .nav-links li {
-  margin: 0 15px;
-  position: relative;
+  margin-right: 30px; /* Add spacing between link items */
 }
 
 .nav-links a {
   text-decoration: none;
   color: black;
   font-size: 16px;
+  line-height: 34px;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-transform: uppercase; /* Make the links uppercase */
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effects */
 }
 
-.nav-links .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  list-style: none;
-  padding: 10px 0;
-  margin: 0;
-}
-
-.dropdown-content li {
-  margin: 0;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px 15px;
-  color: black;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #f0f0f0;
+.nav-links a:hover {
+  color: #d3972d; /* Hover color */
+  text-decoration: underline; /* Underline on hover */
 }
 
 .language-selector {
@@ -98,31 +71,4 @@ header.scrolled {
   text-decoration: none;
   color: black;
   margin: 0 5px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 80vh;
-  padding: 20px;
-  text-align: center;
-}
-
-.wireframe img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-.logo img {
-  max-width: 70%;
-  border: 1px;
-  border-style: solid;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
