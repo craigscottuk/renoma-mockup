@@ -1,7 +1,10 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased; /* Improves font rendering on macOS */
+  -moz-osx-font-smoothing: grayscale; /* Improves font rendering on Firefox/macOS */
+  text-rendering: optimizeLegibility; /* Optimizes for legibility */
 }
 
 header {
@@ -31,10 +34,11 @@ header.scrolled {
   max-width: 1680px; /* Set the maximum width */
   margin: 0 auto; /* Center the navbar */
   width: 100%; /* Ensure it takes full width up to the max-width */
+  font-family: 'Helvetica Neue', sans-serif; /* Apply globally to the navbar */
 }
 
 .logo img {
-  height: 95px;
+  height: 85px;
 }
 
 .nav-links {
@@ -52,10 +56,14 @@ header.scrolled {
   text-decoration: none;
   color: black;
   font-size: 16px;
+  font-weight: 300;
   line-height: 34px;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif; /* Ensure 'Helvetica Neue' is applied */
   text-transform: uppercase; /* Make the links uppercase */
   transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effects */
+  -webkit-font-smoothing: antialiased; /* Improves font rendering */
+  -moz-osx-font-smoothing: grayscale; /* Improves font rendering on Firefox/macOS */
+  text-rendering: optimizeLegibility; /* Optimizes for legibility */
 }
 
 .nav-links a:hover {
@@ -65,6 +73,7 @@ header.scrolled {
 
 .language-selector {
   font-size: 16px;
+  font-family: 'Helvetica Neue', sans-serif; /* Apply to the language selector */
 }
 
 .language-selector a {
