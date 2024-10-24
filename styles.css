@@ -61,6 +61,7 @@ header.scrolled {
   font-family: 'Helvetica Neue', sans-serif; /* Ensure 'Helvetica Neue' is applied */
   text-transform: uppercase; /* Make the links uppercase */
   transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for hover effects */
+  letter-spacing: 0.02em; /* Add 2% tracking (letter spacing) */
   -webkit-font-smoothing: antialiased; /* Improves font rendering */
   -moz-osx-font-smoothing: grayscale; /* Improves font rendering on Firefox/macOS */
   text-rendering: optimizeLegibility; /* Optimizes for legibility */
